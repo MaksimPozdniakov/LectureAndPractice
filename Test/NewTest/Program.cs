@@ -827,7 +827,7 @@ Console.Write(result);
 
 // Дополнительная задача! Найдите произведение пар чисел в одномерном массиве. Парой считаем первый и последний элемент, второй и предпоследний и т.д. Результат запишите в новом массиве.
 // Ну и примеры: [1 2 3 4 5] -> 5 8 3; [6 7 3 6] -> 36 21  
-
+/*
 int[] CreateArray()
 {
     Console.Write("Какого размера будет наш массив? ");
@@ -851,25 +851,27 @@ void ShowArray(int[] myArray)
 }
 int[] NewArray(int[] myArray)
 {
-    /*int Length = myArray.Length / 2 + myArray.Length % 2;
-    int[] newArray = new int[Length];
-
+    int Length = myArray.Length / 2 + myArray.Length % 2;
+    int[] newArray = new int[Length];*/
+/*
     for (int i = 0; i < Length; i++)
     {
         if (i != myArray.Length - 1 - i)
         {
             newArray[i] = myArray[i] * myArray[myArray.Length- 1 - i];
         }
-        else
+        else  
         {
             newArray[i] = myArray[i];
         }
     }
-    return newArray;*/
+    return newArray;
+}*/
 /*
     int i = 0;
     int size = myArray.Length;
     int end = myArray.Length / 2;
+    
     if (size % 2 != 0)
     {
         int length = size / 2 + 1;
@@ -894,9 +896,10 @@ int[] NewArray(int[] myArray)
             size--;
         }
         return newarray;
-    }*/
-
+    }
 }
+*/
+/*
 void ShowNewArray(int[] newArray)
 {
     for (int i = 0; i < newArray.Length; i++)
@@ -910,7 +913,7 @@ int[] myArray = CreateArray();
 ShowArray(myArray);
 
 int[] result = NewArray(myArray);
-ShowNewArray(result);
+ShowNewArray(result);*/
 
 
 
