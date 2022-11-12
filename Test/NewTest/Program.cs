@@ -618,10 +618,9 @@ int numB = Convert.ToInt32(Console.ReadLine());
 int result = Stepen(numA,numB);
 Console.Write(result);
 */
-
-// Задача №11.  Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе. ОШИБКА В РЕШЕНИИ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// Напишите программу, которая принимает на вход число и выдаёт кол-во цифр в числе.
 /*
-int Sum(int num)
+int Quantitu(int num)
 {
     int current = 0;
     
@@ -637,6 +636,31 @@ Console.Write("Введите число ");
 int num = Convert.ToInt32(Console.ReadLine());
 
 int result = Sum(num);
+Console.Write(result);
+*/
+// Задача №11.  Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе. 
+/*
+int SumOfDigits(int num) // принимает целое число, возвращает сумму цифр введенного числа
+{
+    int res = 0;
+
+    if (num < 0)
+    {
+        num = num * (-1);
+    }
+
+    while (num > 0)
+    {
+        res = res + num % 10;
+        num = num / 10;
+    }
+    return res;
+}
+
+Console.Write("Введите число ");
+int num = Convert.ToInt32(Console.ReadLine());
+
+int result = SumOfDigits(num);
 Console.Write(result);
 */
 
@@ -914,6 +938,4 @@ ShowArray(myArray);
 
 int[] result = NewArray(myArray);
 ShowNewArray(result);*/
-
-
 
